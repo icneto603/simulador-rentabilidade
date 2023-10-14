@@ -194,6 +194,8 @@ with st.container():
                   "  {:,.2f} %".format(rent_periodo))
     st.divider()
     st.title("")
-    st.caption(":violet[Copyright © 2023 por Ivo C. Neto e Otávio A. Seixas - Out/2023]")
+    col41, col42, col43 = st.columns(3)
+    with col42:
+        st.caption(":violet[Copyright © 2023 por Ivo C. Neto e Otávio A. Seixas - Out/2023]")
 
 
