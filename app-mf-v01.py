@@ -156,9 +156,10 @@ st.divider()
 with st.container():
 
     st.subheader(":violet[Simulador de Investimento]")
-
-    # Solicitar o valor para o usuário
-    valor_aporte = st.number_input("Valor do Aporte:")
+    col31, col32, col33, col34 = st.columns(4)
+    with col31:
+        # Solicitar o valor para o usuário
+        valor_aporte = st.number_input("Valor do Aporte:")
 
     # Mpetricas para calcular a rentabilidade
     compra = valor_aporte / prim_cotacao
@@ -191,6 +192,8 @@ with st.container():
     with col24:
         st.metric(f"Rentabilidade no período",
                   "  {:,.2f} %".format(rent_periodo))
+    st.divide()
+    st.title("")
     st.caption(":violet[Copyright © 2023 por Ivo C. Neto e Otávio A. Seixas - Out/2023]")
 
 
