@@ -192,4 +192,4 @@ with st.container():
         st.metric(f"Rentabilidade no período",
                   "  {:,.2f} %".format(rent_periodo))
 
-    st.caption(":violet[Desenvolvido por Ivo C. Neto e Otávio A. Seixas - Out/2023]")
+     st.caption(":violet[Copyright © 2023 por Ivo C. Neto e Otávio A. Seixas - Out/2023]")
