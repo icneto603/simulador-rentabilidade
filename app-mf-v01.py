@@ -11,6 +11,7 @@ st.set_page_config(
     page_title="Simulador de Rentabilidade SENAI v01", layout="wide")
 
 # Título da aplicação
+
 st.title(":violet[Simulador de Rentabilidade]")
 st.subheader("Monitorar preços de ativos em tempo real e simular lucros.")
 
@@ -141,14 +142,14 @@ with st.container():
     col16, col17 = st.columns(2)
 
     with col16:
-        st.caption(f":red[Histórico de valorização de] {ativo}:")
+        st.caption(f":violet[Histórico de valorização de] {ativo}:")
         st.area_chart(hist_ativos["Open"], color=[
-                      "#2A5264"], use_container_width=True)
+                      "#5900b3"], use_container_width=True)
 
     with col17:
-        st.caption(f":red[Histórico de dividendos de] {ativo}:")
+        st.caption(f":violet[Histórico de dividendos de] {ativo}:")
         st.bar_chart(hist_dividendos["Dividends"], color=[
-                     "#2A5264"], use_container_width=True)
+                     "#5900b3"], use_container_width=True)
 
 st.divider()
 # Container para exibir o simuador de investimento
@@ -190,3 +191,5 @@ with st.container():
     with col24:
         st.metric(f"Rentabilidade no período",
                   "  {:,.2f} %".format(rent_periodo))
+
+    st.caption(":violet[Desenvolvido por Ivo C. Neto e Otávio A. Seixas - Out/2023]")
