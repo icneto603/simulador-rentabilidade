@@ -195,6 +195,7 @@ with st.container():
     st.divider()
     st.title("")
     col41, col42, col43 = st.columns(3)
+    
     with col42:
         st.caption(":violet[Copyright © 2023 por Ivo C. Neto e Otávio A. Seixas - Out/2023]")
 
