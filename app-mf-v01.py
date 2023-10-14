@@ -37,9 +37,9 @@ with st.container():
     with col1:
         ativo = st.selectbox("Ativo:", options=lista_ativos)
     with col2:
-        data_inicial = st.date_input("Data inicial:", start_date, format="DD\MM\YYYY")
+        data_inicial = st.date_input("Data inicial:", start_date, format="DD/MM/YYYY")
     with col3:
-        data_final = st.date_input("Data final:", end_date, format="DD\MM\YYYY")
+        data_final = st.date_input("Data final:", end_date, format="DD/MM/YYYY")
 
 # Gerar dataframe com os dados selecionados pelo usuário
 hist_ativos = yf.download(
